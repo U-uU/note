@@ -11,8 +11,9 @@
 
 ### <font color=green>创建仓库</font>
 
-在项目的文件夹下，创建本地仓库
-`git init`
+在项目的文件夹下，创建本地仓库 `git init`  
+`git status`查看仓库当前状态
+`git diff`查看不同
 
 
 
