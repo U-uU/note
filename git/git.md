@@ -12,8 +12,24 @@
 ### <font color=green>创建仓库</font>
 
 在项目的文件夹下，创建本地仓库 `git init`  
-`git status`查看仓库当前状态
-`git diff`查看不同
+`git status`查看仓库当前状态  
+`git diff`[查看文本不同diff](/git/diff.md)  
+`git add`将修改提交至本地暂存区  
+`git commit -m "some words"`将修改提交至本地仓库  
+
+### 多分支操作
+
+`git branch name` 创建一个新分支  
+`git checkout name` 切换到新分支  
+`git checkout -b name` 创建并切换到新分支  
+在子分支中，上传提交的操作是一样的，在子分支开发完成后，切回master分支，可以使用`git merge name`将分支内容合并，在合并之前，master不会有子分支的内容  
+`git branch -d name`删除子分支  
+
+
+### 添加远程仓库
+
+
+如果有不希望上传至远程仓库的文件，使用`git rm --cached "filename"` 这样不会删除本地文件，本地仓库push远程仓库后，也会将远程仓库的文件删除。  
 
 
 
