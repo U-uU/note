@@ -42,7 +42,12 @@ git remote add origin https://github.com/U-uU/note.git
 git push -u origin master
 ```
 
- `# git remote add <远程仓库名称> <远程仓库URL>`添加远程仓库，通常情况下远程仓库叫origin。由于远程库是空的，我们第一次推送master分支时，加上了-u参数，git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令`git push`。
+ `# git remote add <远程仓库名称> <远程仓库URL>`添加远程仓库，通常情况下远程仓库叫origin。
+ 
+ 由于远程库是空的，我们第一次推送master分支时，加上了-u参数，git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令`git push`。完整命令为 
+ 
+    git push <远程主机名> <本地分支名>:<远程分支名>
+如果本地分支名和远程分支名相同，可以省略冒号及以后内容。也可以加上--force参数强制推送。
 
 如果有不希望上传至远程仓库的文件，使用`git rm --cached "filename"` 这样不会删除本地文件，本地仓库push远程仓库后，也会将远程仓库的文件删除。  
 
