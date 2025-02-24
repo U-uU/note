@@ -53,6 +53,10 @@ git push -u origin master
 
 当出现冲突时，可以解决后通过`git add <file_name>`标记为已解决。
 
+从远程仓库获取更新：
+
+`git pull origin main`，是`git fetch`和`git merge`的结合，先从远程仓库获取最新的提交记录，然后将这些提交记录合并到你当前的分支中。
+
 
 
 
