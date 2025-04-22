@@ -13,4 +13,5 @@
 
 清除应用缓存：`adb shell pm clear com.gaotu100.tutu`  
 
+### app可视化工具，快速编写AppUI自动化脚本
 开启uiautodev：`python -m uiautodev`
