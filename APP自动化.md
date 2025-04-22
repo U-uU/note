@@ -12,3 +12,5 @@
     d = u2.connect("192.168.0.102:5566")
 
 清除应用缓存：`adb shell pm clear com.gaotu100.tutu`  
+
+开启uiautodev：`python -m uiautodev`
